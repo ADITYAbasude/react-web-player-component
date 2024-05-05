@@ -15,6 +15,10 @@
     "video"
   ],
   "author": "Aditya Basude (https://github.com/ADITYAbasude)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ADITYAbasude/react-web-player"
+  },
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.24.1",
