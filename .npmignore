@@ -1,2 +1,7 @@
-
-.gitignore
+.github
+babel.config.js
+src
+__test__
+webpack/*
+yarn-error.log
+/example/
