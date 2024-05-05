@@ -1,0 +1,15 @@
+.wp-control-panel {
+  user-select: none;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+}
