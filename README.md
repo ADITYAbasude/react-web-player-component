@@ -1,17 +1,17 @@
-# <center>react-wplayer</center>
+# <center>react-web-player-component</center>
 
 It's a react component to provide a seamless components to play a different type of media (GIF, video, audio).
 
 ### Usage
 
 ```bash
-npm install react-wplayer
+npm install react-web-player-component
 ```
 
 ```jsx
 import "./App.css";
-import { Player } from "react-wplayer";
-import "react-wplayer/dist/playerControls.css";
+import { Player } from "react-web-player-component";
+import "react-web-player-component/dist/playerControls.css";
 
 function App() {
   return (
