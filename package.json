@@ -1,5 +1,5 @@
 {
-  "name": "react-web-player",
+  "name": "react-wplayer",
   "version": "1.0.0",
   "description": "light weight and customizable video player",
   "main": "lib/index.js",
@@ -17,7 +17,7 @@
   "author": "Aditya Basude (https://github.com/ADITYAbasude)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ADITYAbasude/react-web-player"
+    "url": "git+https://github.com/ADITYAbasude/react-wplayer"
   },
   "license": "MIT",
   "devDependencies": {

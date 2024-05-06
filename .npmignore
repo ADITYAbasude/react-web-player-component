@@ -1,4 +1,4 @@
-.github
+.gitignore
 babel.config.js
 src
 __test__

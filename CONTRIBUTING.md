@@ -1,4 +1,4 @@
-# Contributing to react-web-player
+# Contributing to react-wplayer
 
 Thank you for considering contributing to our project! To maintain a collaborative and welcoming community, please follow these guidelines when making contributions:
 
@@ -25,7 +25,7 @@ npm run build
 ```
 
 ### testing
-react-web-player use jest for testing. Be sure to test after making changes.
+react-wplayer use jest for testing. Be sure to test after making changes.
 ```bash
 npm test
 ``` 

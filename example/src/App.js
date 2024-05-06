@@ -1,6 +1,6 @@
 import "./App.css";
-import { Player } from "react-web-player";
-import "react-web-player/dist/playerControls.css";
+import { Player } from "react-wplayer";
+import "react-wplayer/dist/playerControls.css";
 
 function App() {
   return (
