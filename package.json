@@ -43,5 +43,11 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5",
     "webpack-cli": "^5.1.4"
+  },
+  "standard": {
+    "ignore": [
+      "/dist/*",
+      "/example/*"
+    ]
   }
 }
