@@ -1,3 +1,6 @@
+
+@import url('react-web-player-component/dist/playerControls.css');
+
 .wp-control-panel {
   user-select: none;
   

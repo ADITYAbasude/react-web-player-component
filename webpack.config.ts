@@ -1,11 +1,11 @@
 import path from "path";
-
-module.exports = {
+import { Configuration } from "webpack";
+const config: Configuration = {
   entry: "./src/index.ts",
   module: {
     rules: [
       {
-        test: /\.(ts|js)x$/,
+        test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
@@ -19,23 +19,20 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/,
+        test: /\.css?$/,
         use: ["style-loader", "css-loader"],
-        options: {
-          import: true
-        }
-      }
+      },
     ],
   },
   resolve: {
     extensions: [".ts", ".js", ".tsx", ".jsx", ".css"],
   },
   output: {
-    path: path.join(__dirname, "./dist"),
+    path: path.join(__dirname, "dist"),
     filename: "bundle.js",
+    publicPath: "/",
   },
 };
 
-const playerControls = require("./src/playerControls.module.css");
 
-module.exports = playerControls;
+export default config;

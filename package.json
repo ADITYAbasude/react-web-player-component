@@ -9,16 +9,33 @@
     "build:lib": "tsc --project ./ --outDir lib --watch",
     "start": "npm run build:lib --watch && webpack ./example/src/index.js -o demo/bundle.js --watch --mode development"
   },
-  "keywords": [
-    "media",
-    "streaming",
-    "video"
-  ],
   "author": "Aditya Basude (https://github.com/ADITYAbasude)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ADITYAbasude/react-web-player-component"
   },
+  "style": "./src/playerControls.css",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./src/playerControls.css": {
+      "import": "./src/playerControls.css",
+      "require": "./src/playerControls.css",
+      "default": "./src/playerControls.css"
+    },
+    "./package,json": {
+      "require": "./package.json",
+      "import": "./package.json",
+      "default": "./package.json"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "tsconfig.json"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.24.1",
@@ -49,5 +66,10 @@
       "/dist/*",
       "/example/*"
     ]
-  }
+  },
+  "keywords": [
+    "media",
+    "streaming",
+    "video"
+  ]
 }

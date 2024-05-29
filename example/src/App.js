@@ -1,6 +1,6 @@
 import "./App.css";
 import { Player } from "react-web-player-component";
-import "react-web-player-component/dist/playerControls.css";
+// import 'react-web-player-component/dist/playerControls.css'
 
 function App() {
   return (
@@ -19,6 +19,8 @@ function App() {
         }
         width={400}
         height={300}
+        onPlay={() => console.log("play")}
+        onPause={() => console.log("pause")}
       />
     </div>
   );

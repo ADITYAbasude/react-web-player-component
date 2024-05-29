@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { Props, PropsWithOptional } from "./props.interface";
 import PlayerControls from "./PlayerControls";
-
 /**
-* Player component
-* 
-* @param {Props} props - the props of the component
-* @returns {JSX.Element} the rendered component
+ * Player component
+ *
+ * @param {Props} props - the props of the component
+ * @returns {JSX.Element} the rendered component
+ * @example <Player url="blob url" />
  */
 class Player extends Component<PropsWithOptional> {
   videoRef: React.RefObject<HTMLVideoElement>;
@@ -53,31 +53,33 @@ class Player extends Component<PropsWithOptional> {
     }
 
     return (
-      <div
-        className="wp-player-container"
-        id="control-container"
-        style={{
-          position: "relative",
-          width: width,
-          height: height,
-        }}
-      >
-        <PlayerControls
-          videoRef={this.videoRef}
-          onSeeking={this.props.onSeeking}
-          color={this.props.color}
-        />
-        <video
-          ref={this.videoRef}
-          controls={false}
-          src={url}
-          id="wp-video"
+      // <Container>
+        <div
+          className="wp-player-container"
+          id="control-container"
           style={{
-            height: this.state.fullScreen ? "100%" : height,
-            width: this.state.fullScreen ? "100%" : width,
+            position: "relative",
+            width: width,
+            height: height,
           }}
-        />
-      </div>
+        >
+          <PlayerControls
+            videoRef={this.videoRef}
+            onSeeking={this.props.onSeeking}
+            color={this.props.color}
+          />
+          <video
+            ref={this.videoRef}
+            controls={false}
+            src={url}
+            id="wp-video"
+            style={{
+              height: this.state.fullScreen ? "100%" : height,
+              width: this.state.fullScreen ? "100%" : width,
+            }}
+          />
+        </div>
+      // </Container>
     );
   }
 }
