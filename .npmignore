@@ -1,7 +1,12 @@
 .gitignore
 babel.config.js
-src
 __test__
 webpack/*
 yarn-error.log
 /example/
+
+/src
+**/*.ts
+**/*.tsx
+**/*.js
+**/*.jsx

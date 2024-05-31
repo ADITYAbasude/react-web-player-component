@@ -1,6 +1,7 @@
 import "./App.css";
 import { Player } from "react-web-player-component";
-// import 'react-web-player-component/dist/playerControls.css'
+import "react-web-player-component/dist/style.css";
+
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           "https://res.cloudinary.com/drwviska5/video/upload/v1713686207/Trend/memes/becyf4toaabgoghlnvjp.mp4"
         }
         width={400}
-        height={300}
+        height={250}
         onPlay={() => console.log("play")}
         onPause={() => console.log("pause")}
       />

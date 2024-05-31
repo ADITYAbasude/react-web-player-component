@@ -237,7 +237,7 @@ class PlayerBottomContent extends Component<
               )}
             </button>
             <button
-              className="wp-control-button"
+              className={"wp-control-button"}
               aria-label="fullScreen"
               onClick={this.handleFullScreen}
             >
